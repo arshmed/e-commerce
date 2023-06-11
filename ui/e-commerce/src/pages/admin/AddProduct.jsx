@@ -153,9 +153,6 @@ function AddProduct () {
                         <Form.Label>Author Name *</Form.Label>
                         <Form.Control value={authorName}  type="text" placeholder="Ömer Seyfettin" onChange={(event) => handleAuthorName(event.target.value)} />
                         <br/>
-                        <Form.Label>Category *</Form.Label>
-                        <Form.Control value={category}  type="text" placeholder="Drama" onChange={(event) => handleCategory(event.target.value)} />
-                         <br/>
 
                           <Form.Label>Number of Pages *</Form.Label>
                               <Form.Control value={numberOfPages}  type="number" placeholder="93" onChange={(event) => handlenumberOfPages(event.target.value)} />
