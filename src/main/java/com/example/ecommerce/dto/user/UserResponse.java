@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -41,6 +42,9 @@ public class UserResponse {
         this.role = user.getRole();
         this.registrationDate = user.getRegistrationDate();
         this.answer = user.getAnswer();
-        this.numberOfReviews = user.getReviews().size();
+        if(user.getReviews() == null)
+            this.numberOfReviews = 0;
+        else
+            this.numberOfReviews = user.getReviews().size();
     }
 }

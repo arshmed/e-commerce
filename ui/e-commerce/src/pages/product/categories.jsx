@@ -100,7 +100,7 @@ const Categories = () => {
 
             <center><h2>Our Categories</h2></center><br/>
             <div>
-               <center><div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', height: '20vh' }}>
+               <center><div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', height: '10vh' }}>
                    {categories.map((category) => (
                        <Button key={category.id} basic color='blue' style={{ marginRight: '10px', marginBottom: '10px' }}>
                            <a href={"/products?category=" + category.id}>{category.name}</a>
